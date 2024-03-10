@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+   
+}
+body{
+    color: antiquewhite;
+    overflow: hidden;
+
+}
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    z-index: 100;
+    background-color: rgb(46, 15, 15);
+}
+
+.logo{
+    position: relative;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: 700;
+    color: blanchedalmond;
+    transition: 1s ease-out;
+}
+.logo:hover{
+    color:  aqua;
+}
+.navbar a{
+    display: inline-block;
+   font-size: 20px;
+    color: rgb(224, 244, 247);
+    margin-left: 20px;   
+    text-decoration: none; 
+    transition: .3s;
+    font-weight: 600;
+    transition: 0.5s ease forwards;
+}
+
+.navbar a:hover{
+    color: aqua;
+    cursor: pointer;
+    transform: scaleX(1.2);
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url("./images/ogimg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 10%;
+}
+.homecontent{
+    max-width: 600px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10%;
+    margin-bottom: 15px;
+}
+.homecontent h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+    color: rgb(224, 221, 37);
+    margin-bottom: 15px;
+}
+.homecontent h3,p{
+    margin-bottom: 10px;
+}
+.homesci{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.homesci img{
+    width:90%;
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.aboutme{
+    text-decoration: none;
+    width: 17%;
+    background-color: rgb(16, 205, 230);
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(14, 13, 13);
+    margin-left: 40px;
+    letter-spacing: 2px;
+    animation: slideTop 1s ease forwards;
+    box-shadow: 0px 0px 5px aqua,0px 0px 25px aqua;
+}
+.aboutme:hover{
+    color: aqua;
+    background: transparent;
+}
+.text{
+    color: aqua;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.about{
+    position: relative;
+    background-image: url(./images/smokebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    color: black;
+
+}
+
+.abouttext{
+    position: absolute;
+    margin: 11% 20%;
+    line-height: 1.7;
+    width: 60%;
+    padding: 25px;
+    background-color: rgb(4, 44, 219);
+}
+.abouttext h2,h4,p{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.abouttext span{
+    color: whitesmoke;
+    font-size: large;
+    font-weight: 600;
+}
+
+
+
+.skills{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+   background-image: url(./images/smokebg.jpg);
+   display: flex;
+   color: black;
+   align-items: center;
+   justify-content: center;
+}
+.skilldiv{
+    position: absolute;
+    padding-top: 10px;
+    margin: 10% auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.techs{
+    position: relative;
+    display: grid;
+    grid-template-columns: 10% 15% 50%;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.techs img{
+    width: 2rem;
+    height: 2rem;
+}
+.htmllevel{
+    height: 20px;
+    padding: 2px;
+    font-size: smaller;
+    font-weight: 600;
+    color: aliceblue;
+    animation: animate1 1.5s forwards;
+    width:0%
+}
+@keyframes animate1{
+    0%{
+       width: 30%;
+       background-color: rgb(21, 255, 0);
+    }
+    85%{
+        width: 80%;
+        background-color: blue;
+    }
+    100% {
+        width: 80%; 
+        background-color: blue;
+    }
+}
+.csslevel{
+    height: 20px;
+    padding: 2px;
+    font-size: smaller;
+    font-weight: 600;
+    color: aliceblue;
+    animation: animate2 1.5s forwards;
+    width:0%
+}
+@keyframes animate2{
+    0%{
+       width: 30%;
+       background-color: rgb(21, 255, 0);
+    }
+    65%{
+        width: 60%;
+        background-color: blue;
+    }
+    100%{
+        width: 60%;
+        background-color: blue;
+    }
+}
+
+.jslevel{
+    padding: 2px;
+    font-size: smaller;
+    font-weight: 600;
+    color: aliceblue;
+    height: 20px;
+    animation: animate3 2s forwards;
+    width:0%
+}
+@keyframes animate3{
+    0%{
+       width: 30%;
+       background-color: rgb(21, 255, 0);
+    }
+    75%{
+        width: 70%;
+        background-color: blue;
+    }
+    100%{
+        width: 70%;
+        background-color: blue;
+    }
+}
+.reactlevel{
+    padding: 2px;
+    font-size: smaller;
+    font-weight: 800;
+    color: aliceblue;
+    height: 20px;
+    animation: animate4 1s forwards;
+    width:0%
+}
+@keyframes animate4{
+    0%{
+       width: 30%;
+       background-color: rgb(21, 255, 0);
+    }
+    70%{
+        width: 65%;
+        background-color: blue;
+    }
+    100%{
+        width: 65%;
+        background-color: blue;
+    }
+}
+.twlevel{
+    padding: 2px;
+    font-size: smaller;
+    font-weight: 600;
+    color: aliceblue;
+    height: 20px;
+    animation: animate5 1s forwards;
+    width:0%
+}
+@keyframes animate5{
+    0%{
+       width: 30%;
+       background-color: rgb(21, 255, 0);
+    }
+    75%{
+        width: 70%;
+        background-color: blue;
+    }
+    100%{
+        width: 70%;
+        background-color: blue;
+    }
+}
+
+#fullcontainer{
+    display: flex;
+    flex-direction: column;
+    height: 500vh;
+}
+.projects{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./images/smokebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.projectscontent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    margin-top: 38px;
+}
+.projdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 53px;
+}
+.projdiv img{
+    width: 90%;
+    max-height: 60%;
+
+}
+.projecttopic{
+    font-size: larger;
+    color: cornflowerblue;
+}
+.projdiv a{
+    text-decoration: none;
+}
+
+.projdiv p{
+    color: black;
+}
+.contact{
+    background-image: url(./images/smokebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20%;
+    color: black;
+
+}
+.cont{
+    width: 60%;
+}
+.contdiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 5px; 
+    margin-bottom: 15px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    color: black;
+    background-color: blueviolet;
+    width: 100vw;
+    height: 7%;
+    bottom:0 ;
+    font-family:sans-serif ;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}

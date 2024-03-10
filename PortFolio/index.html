@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span style="color:darkturquoise;  text-shadow: 2px 2px 4px rgba(17, 152, 230, 0.5)" class="myname">BALAJI's</span> Portfolio</a> 
+
+        <nav class="navbar">
+            <a id="homeid">Home</a>
+            <a id="aboutid">About</a>
+            <a id="skillsid">Skills</a>
+            <a id="projectsid">Projects</a>
+            <a id="contactid">Contact</a>
+        </nav>
+    </header>
+    <container id="fullcontainer">
+    <section class="home" id="home">
+        <div class="homecontent">
+           <h3>Hello,It's me</h3>
+           <h1>BALAJI RD</h1>
+           <h3>And I am a <span class="text"></span></h3>
+           <p>I am a Fresher with good Skills
+            <br>in <span style="color:deepskyblue" class="langs">Html,Css,Javascript,ReactJs</span></p>
+        </div>
+       <div class="homesci">
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAlpJREFUSEu1lj1oFFEQx/9zCvH0vY25fQeiIjYWgiKWiiAWoiKiooUoNgoaLCQSkBTiB2IhKJrCD7BII6QQA4oflWIh1imNpyCGKOR2o+y8YEDdkT28Jbt378xpbsud/8xvZt682SV0+KEOx0drQEW6vKXTB4TinRDaAMJqAALBR5CMCtFzW1IjIPrhStQJ8Kamd0kstwFJgrZ63seg3mmjXjQTNQV4Vb4ohAtttC+G0Fkuq+t5nwaAV+VLQjjfRvBUSkR9ka8GZ/tmALoa7QHRY2dwQUBE/QsKhVdfS4s/JTodRtcg1P/HJ0ZBtnLJe12PkQLKk5NqplCsAFjmAPyEyDoue2Oz7TlAYhpjX62vH3wKUFXuJcIdV/ZCGLa+Ply3d4d2+y/IZhLsALAp6yf72HiPkncpQIf2CUR2OwHAOWv0lcSuQj5IggfOVhLusa9PZAEBTwBY7pxnojORr24mdi+0fSJyw63FaOTrjXnAdwCL5gMA4Bsb3ZMDWAvIkhzgCxvtrKo2RQG/BLAt52fZaJ2v4B2ANTnhZzZ6Ras7oQMeB7Ayp3nLRq/NAFTA9wk40lYFFenSPXamMQEaYqOOZQFVPkSE4fk5gyZjCpGFKrQfCFjVDEJzn6K0PZkKauNX26Dxs/8ACEi2sO+9qcdoWHYq4EECTuchc6mABJejss4sysZ1LUJ6yt6FoHYT00z+2iK6ykYNNCTmOlQvsEcFtdvq13rpBkyQxCejcvfTpq1tNeMYl6JXtMcF2C/AiDX6VqJXAZ8CsBciD63RQ//0yWwJbsPY8b+K352uDyjZgO3NAAAAAElFTkSuQmCC"/></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAzBJREFUSEvFlV+IVGUYxp/nnFl0ds73zaznTFq5hKJSFFSK2k0RQloE3ZRCQtASBf2xiGAv6qagLiRv0oogWAzqIrALIaSyP2QEFYreVBJsoknYnDNNc96z47LNOW+cdSbWdc7Ujex3eb7ne3/f9z7v+x7iKi9e5fhYekA1nNmUUXcBeheADQBSAN8C+n2auZ92rqmcHJaFwheUm51xV9N3CewAICDyQD+rYpbE7VDcCqAK6j5ZYV4COTcINBBgwngDyK8ALCP4fOxX3gepiwPYSPYosA/Ar0o8lPjmx8WaKwCVRrLKcfS4AqmbptvaK2vTw1Lg/Sm3UHEYSsfMVW7+/Tp2FuqvAJgwPgJyi1NKN7drtTPlqHN9CV0jgT1dBJqHZDhBYCoOzJOFANOI74TDY6A+Jr6d8iK5CcBxQkPxzZpBaeoHM1H8IsDXHHJ72/eO9r9f9gIvkgMEJ8SvjIH820TxJMC9udghd7R977PCdP2mZVNOBMBhCcyDAwEmlFMgz0ngPZALvEieIvDWJbFOSGAPDvNj/nxecnVz22BAJOdBHBHfPJELRsOZa11mZwC0xPfGQXaHApryDhS7JTC2CPALiROxbx7uC3qluJ/A27HvPTPch2QvoM9JYJYXefAJwTEJvK0Lb2pD+VCJXXl+u3T3lLLuKMiDUJ1yRrJD7Vqtlet7uo0SmPUDATaSVxWY1C5WJ6tM41+IqmubyRsKPA0gBuZnmJnfp74uvp2EqmOaSQTFR1I3jw8EVP/4a23mutNUvBLXzcuL811tJvdkqvsB3Njbyxzy3rwsbZjsVuoHi6ttQKPJKSXSJDCbigythjMbU2TWHUnP5s1Ya128IU27P+SzSgJzd2GjrbxwodIpVVpQPSB1+8Kwiunv9YJ/nltQctzNrRWj5woBNmzfr3Q+JvgIFJky267K75JZ7z2M8+LCg+VmZ7Wr6aMEns2bRIlt/znsbCRv9ozsx8qn4zoAcwC/VmjeE0pgC4A7LpmMb5xuOlE0FC/zwEZyVIlpBb7kiH4h1jbrjYY36y7fiYz3KbGVwBjAn8DsGFUPxUE1z33hWvpf5v8xeklf8A8jRlAo10K0NgAAAABJRU5ErkJggg=="/></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAApNJREFUSEvFlU1oE0EUx/9vNrW2Hb8omaAHLypFavyg9SJUD5qNCGoPVRDqxWOLgh7Eg4jiwYMgFerJa8V6KFIP0m6VUnoR9VCLFEF6KAglu0XUTFCbZJ6kmHSz2UiKhM5t5733/+37mBlCnRfVWR/rA9jyOrUrb+gaGF0A9gFVf4QBfARhWjAGftjqc7AiFRnI8VQfiAYANKyxfFki6k8noo/9cWWA5nGvQxC/BSDWKF50z7HhzszJ2IfiRhlATnjPwdy9BnEXbOIgcQ7A4EocY0QnVU84wEktALQzBPAFzPcgxBxgWompjQk3wFjQtoo3O16nAL/7C5jXSbU7FNDiuJqAlgDA2fiTepbORtPy5WK0YNOntntybLEdwhoDIQPGVgCxlThCWifU5krAbRbyiJcPiHsNFNmTM9l2FqIXjGMrRSCeohwPIUIWM6YDMTltq9KArPbgPTfIr96y35mJ7mcS0etywn0ERl9AaFDb6nKL474g4LTPlte2ilRmMMkRmfWyZSNGuET536NGbJgCqHAeVhdjVifVAel4twC+47MYbSurEsBMcsIz5SLcL3h52FDjJAj7AxnMaFsdkuPuTRDu+m3aVqXKlI+p4xZOZmkRaChtRy9Kx30I4EoggwGdVFelkxoF6IzPVqUHAGQAAMAwmYNWPtJkLL4A8FEYgARP5XPmqRWxGkOa/EvbqqnmMSXQggF3Z2w1489g05jbxQLDAHYESvdN22pbKEA6buGyKh0Sf+MAjIB5DkStANoAJALCxc9P2lZ7qwGeAThfJbC2beInOhHrDQU0v1o6LIx581+XneCOzInYbCigsFnX67pIDTw48X/UpvTgWIIffD8emw/6rs+TWVs3a/OqewZ/AN2y/Bm5yYrXAAAAAElFTkSuQmCC"/></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAipJREFUSEvdlc1rE1EUxc+dJGidN1NJJraC4geICCoirnSpCIrgB1KUggtdiHSvKIp/gG5cVNxIKXTjpgtB6KIbETdFQdGFK4MBMSYZA3kzVVtnjkxDokkmSVPIpm85977ze+fMmzuCAS8ZsD7WGWCkUDC/j4763WJLu669HKbuQ+QMgF0ElkU4qdPWnaEfP7emGJytZtQkRBjp/IuITFiu9zE0ZMxPqw+dIHZZzxM43lonkBdgOwWXvYz1rF5vADZXKjuDIJkDUILB8zptv24VGS75h0MJ33Z2yDcQvAwDY8bfot41O8hxo2V5GkByRYDyNIDcW8ya3+qCdskbp3CmM0CieCe0o6bbHEQPrLKOTn20SUDwCqE8J7lgGDhE4FEXwJR21NX/642IssWiWhJzb4hwDgJnTd+H8IHO2DdjAUPu4rYkgy8AXADZtQAITHiO9TgWANKwXP0ZkB1rEa/t4T7t2J/iAQBUWV8QILpitRfdz6LkdFbtbt3SNiqUq8eEuAvgQF/6xA0vaz3pCbCL/mka4Yu+xIG8l1F7ILLUE1C7rtVpQK6sEvJHEB6rOsMLcf3x05Q0zIq/P0HeJnGpC4gQXtMZe6pTTxsgGnh+wjwi4C2InOoi/ovAuOdYs92cNgBm2TthkA8hONg0BON2k3PJRPJ6Jb0p3yvGJgcroxipi6BxDuBJABsA/AZYAOSrEPNBKLP+iHrfS7heX2d/tNXa7qdv4BH9BZvLwRlV8MUXAAAAAElFTkSuQmCC"/></a>
+        </div>
+            <a href="#" class="aboutme">More About Me..</a>
+    </div>
+    </section>
+    <section class="about" id="about">
+       <div class="abouttext">
+          <h2>About<span style="color: aliceblue;font-size: xx-large;">Me</span></h2>
+          <h4 style="color:whitesmoke; font-size: xx-large;">Web Developer!</h4>
+          <p>     I am a Fresher with skills on <span>Front End Web Development..</span> I have Completed my BE Computer Science in 2023..I had a three months Internship on MERN Stack Development in <span>ABSERVETECH, Madurai(Aug 2023-Nov-2023)</span>.My Passion is creating Web Designs and implementing through frontend web development.I am a Quick Learner with adaptability and a Team Player.<p>
+       </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="skilldiv">
+        <h1>My Skills</h1>
+        <div class="techs">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAApBJREFUSEvVlV1IFFEUx/9nNsUX967WS4EERRRkRKUx16Tm+lFQERQUBUGFD0EgBL3oQ0EfCAXViw89RB8PBRX1YhSk7QyLu7NqERgFUQ8R1ZPozhRF5cyJcZfQXK+LYNB5vPd/zu/8z517hzDPQfNcH/8e4DaJYTDWzNHZsLS9tZNzpzlwlegD0DxHQJ+0vVYtIKvEbQYOzA1At6SdO6gHWPHLTHQ8EjHRHgoxpoURqgG+n9fwJWn7J7SAjBKdBHRFohhitRvt0Vc6QNqqqjUofJmvjw7peOf1DpoSR5j5Wj6BlHRyjqviFwHaUBREiIOxrqA/LJ3cTb0Dq3InkdFT6Gi/dLw7riXugrB31nMh3i6T/mMtIN0crzdCGswb4PaGpN/drypXxji2uLgDjsDHJvQBrW9I5V7oAU2JpQbz+4Llc9LJndR1nlWii4HOSEMcqzGd0Y9agG2hooLE94LoE4B3xQAEvmDa/iNXiasA2iJNme+V1z3HLy0g2nSV8ADEAQyAqYMp3Eyg01NAZOySybGejEo8JPAOAKPS9hb+3UzRt8hVIup6eQSQtmdmmxOKQ05OTWZT2v5ARokhAuoIeGPa3qoSAYk0wA3ReKTtrYiSBlX16hDBppARGLHANZ9+fV1w+wFADQEp0/a2lAawxAMQdgP4Rsxt42Xlqcbekc+Tk/tbFy0xxn9aBLoRjR+Me9Lx9pUEyCpxhYGjU2eOt2CkCFzGRBKMCWd/gqlbOrn2kgAZlThDYO3nOb0QnzJt/2xJgKEWsSwI6BCDtwGoB2DMcBfC6HgI9IQZ16WTy9+fSTHrH+1ZS5UYD8KWENhKQPTWBwB6mag3/LGgrzE98mUG+MTyrABdcil7/z/gN6Dr7xnDma54AAAAAElFTkSuQmCC"/>
+        <h3>Html</h3>
+        <span class="htmllevel"><b>80%</b></span>
+        </div>
+        <div class="techs">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAsFJREFUSEu9ld9LFFEUx8+5u25h7i/dcfyZUZAF9guywqCCghCkhwKfInoIBHdX8z/YPyAo210h6KWHegisB18yeoggMYjAiqigUtFkf8zu7GqCztxzYrRgt2ycBJ3HuZ9zP+d77525CJv84CbPD1sv8MZzJ90sqzeSzETKzUfVl6W1fyXwxbXzCNSyEQEDTRWj6qitIJBIn2LGfRsRIPJHPVL7wj5BMtuOxEcsiFC8E4KW7WREwiOYDvxi3hSiymtbQXAw10ZCdqwKlobnI02ancB743tIbKu4aDGC5Fi+v+69rcA/pO8GaZxbhUgTLNZMYDJp8/3qWHVSa5ZEnSu4i54VetWvtoJQPNNgAHStuwdMk4U+9an3VqZVuOC0xRseGFnsUebsN/lmPsBus7tMgKyDwC9lhUumpg/UTwaS6cNMeMwaQ9P9UB8I6rYCiH3b7q+pulIKCQFz+bAyslYq72CqQwjRZo0VOHQP+nDJXgAA/oR2DZjEbxCZTQTMlAloeSJ/vXHan8ieBeY9gECFiHL3zybW/FX44qnLCKISBWbdxOMms8qI7WWdoTGqRxqmvIlMl2BoYAE/imHlviOBP566BCBqrFNUiKrDO5LpOjfhhdJiyebjhb76jD+hdQNTwGpGD4ceORL44ulOBGxmgIViVHlgFfmH9KBksw7RWrvFdKG3JW+9D9xOX2VEDwsxXQzXPHEkCMQzZxhgL6AgkuYHj8c1paUScxCL0coEMRbVSq6RpdxFiPtXThDAZz2qPHck8CWyx5H5UPlpYINBTAFLgYA7GdFdOs6IE8VI6JUjQXAod5CkPLHux1YCCBeN53vVt44ESjJdtWxiK7qwiYlrAf9xMTEwIqSYYNbj5k+ZcO2CI0EZdIcrAqQ3omE0S8AmEMAuk2eY5YxeOTsLPUcNu6Rbf2X+z7o7YTc9wU84sCcor27ungAAAABJRU5ErkJggg=="/>
+        <h3>CSS</h3>
+        <span class="csslevel"><b>60%</b></span>
+        </div>
+        <div class="techs">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYRJREFUSEvtlbFLW1EUxn/fvaJbHSTPCsUhL2IchFLpoKv+BRW6ORQHwUFwcXJz6CaUtgiF0q2b/gmuDs4miokdOvkiFAdRTN49EjSSDqIvqdLBO17OOb/zffdwrnjko0euz9MC9pPY/oWiYlS9bfwvBc+Alr3PFt07aP+vRWY263AvTfYVODdYkaMk02szWwZeNeV1rMCniuoids52TCyM5arf9pK40OuVNBphRtJmVwA1fC51odAEePTG9YSjekM14A+Qg+vV07GCdoDB0lhU/Xxwkn9L0KLBHOC7ArRbBATgo0/1aWSoUivX4gkZ28CLjhX0BAYvUb5pUduspqCFYlT5Xj7Or0tazgJIBRsGk2BFf+oGQn+YNvTDZPPOmDK0ArZVjI7e7yfxGrCaBXBatzA6PvjruNVxOcl/EZr3XhMjA5VS6/7wsNCX9tsuMJ4F0Mz/DfppxoXEMNiH66J2hrRhQWdOodfQO2C0q0e+d0fcBNyp4KEFssQ97Z+cpbOHxl4B7DzFGXbJuo8AAAAASUVORK5CYII="/>
+        <h3>Javascript</h3>
+        <span class="jslevel"><b>70%</b></span>
+        </div>
+        <div class="techs">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAA+9JREFUSEvFlW9oVWUcx7/f5947nbOdu7X+MLZ7zzl3M7PRHzZCYyZKBGn1IoVeFEUli7CwqGC+UALfRK6MRYHWCiqiF+GLwDf+wYGLQiaOmNjmds6528pIt91nmeh2z/OLM7fbnHe0EOl5eZ7f9/f5/X0OcZMPb7J/LAiwgsAhTLsA56Bkv05luucGU+77q0l5UQR3KHB7znGCYsEuDPC9E1DYI4LbKXieRB9DeTW/ZElc5Sf3AagWyNckz0PwhrbdhxYNKPP9O+M032g7s2FaJKLKh7z3CfUkIAkIvtRpZydIia6TweAPDLFxPJPR8yFFM7CGzmZg1B5tZ54qCHx/aRKmX0ijL15agYaGydk7y/cOhaF59mJd3R+LApQPD1cynDqobXfNTAa0ssF3FNMlSiVgpFE77tMFQOCd0lPhatTXX1kUIDKyfK8PCjsB3i8imwkkAZyZcbBKwDESB4T4mQa7tO2s+vce9PaWlC8v3UrwFQApATuE+WNK4jt0OngYXJ+/mtGxuJVN/2RUuJsSX09jXgA5BOHHenS0A01NU7OwQg+sbNaFhEco8pWo+Ic0Zp0QTwBmGRF7L2fbpyx/sDUSaifzbrnnPUjiTRJXDORbMv4jYN6GkS2xRLhhrKZ+JLItAJKB1yU023W67uQ0vbs7YVVV+AR7crb7uBV4nwF4aSayDm27W63AOwxipU5lndnsKrKDzcZwl3bcR68BWL7Xrx13xdw6WlmvH4JObbst5YF3nEDzdIWArgnbXWsF/ueArNG2e3dBJ0Ir65/RtrtyHmCwFWSVvjC2I6phtMlA+D3AqnAqvDdWElsH4f5pR5SWvGFXnHJcIJOxEI+NZzJD6O0tSS5f1gZIkLMzH1wDuDo5/sugaRGwE+StyqBHgMtQ5j6dzkSNL5woeoE5QrBaRO5R4IRQmgF+om2347omF5TRJJWVbqZiO4SnQZkUQQMEhxXEn7ZTzIhgLYg+CEoAaQC5TaeyBwqTNuOw+Fskoqysf1Lb7gPw/aUWzSYBP6IJXxfGFSh7VUxty12eOhgtlxUtWmRb5BQFVI6crQnz8X3adjbNaqzs4CMwbINCjIav5Ryns3D3X5+KaCcoYXs0nrNOKgcGasO4ip5sE48lmkZra38tAAL/aF7wzF+O8/v8JIpmUDM8XPqnmeq7RSXuGqmpmawY8jcawacC7FYiJUK2ivC5Cds+dNv502WTl0p/0Wk3DTJcFCAySvqD7xiqLYRUgzihaN4aT9X1Tk9bdqBRjNpLop6QMQG/0Lbbtuge/FP3gcYES85dSKV+KyZOel4UdUXOcXqK3V+3BwsZ3cj3/++nfyNRz9X+DSu3vSg5E8QiAAAAAElFTkSuQmCC"/>
+            <h3>React JS</h3>
+            <span class="reactlevel"><b>65%</b></span>
+        </div>
+          <div class="techs">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZJJREFUSEvtlc1KAlEYht/vjKWO2o8igaBZixa5aNXCGwi6AW/BRSLhFXgJUbZw1d4riK6gcFVQizZFkaBiiTo6mZ4vspSEcaYswYWzmzOH9+H95pkzhAlfNOF8zACWE56CEWULquPVuU0QAVLYTSzaDC4TKQVtz3UJEJvVMG+Q43lXsRZjsGocQo/NlYUzxKg7CmIKcGYqUZAtDO7cA3MQ6G4wk30oTBGlZqlyivSa3l93HDyH9H3vw8e9KcCdqUcaCc/1IPCEHU6tuktM/u8QEqRLwi06kEKBVzJeWonFC0uAYe00C6evHiXIiNFzElLTbMs5xOltPMBXqnpUDkhhX1fQWWUIlZnqDFHQ2+48UtTqw4dHNMoYKZ+05NKVlTGGjQaL/2CMKaBnjLSFAdxBEBkaAy41K9VhY7LNkB5Xe8aYAtyH9c1G0nPza2O6nWor6Tu3BBhuyLGiFms7AAd/Yoz5Oxj5vTO5jrUt5m6AQH4mOf9pjCzo7UYeqeDAmDEBlgem6YYpOE3/VmD2y7Se3zv0Uq8ZKXp3FgAAAABJRU5ErkJggg=="/>
+            <h3>Tailwind CSS</h3>
+            <span class="twlevel"><b>70%</b></span>
+          </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+       <div class="projectsdiv">
+         <div class="projectscontent">
+            <div class="projdiv">
+                <a class="imageanchor"><h1 class="projecttopic">IMAGE SLIDER</h1></a>
+                <img class="projectimage" src="./projectpics/imageslider.png">
+                <p>Image Slider using UseState React Hooks</p>
+            </div>
+            <div class="projdiv">
+                <a class="calcanchor" ><h1 class="projecttopic">CALCULATOR</h1></a>
+                <img class="projectimage" src="./projectpics/calculator.png">
+                <p>Calculator app using REACTJS hooks like useReducer</p>
+            </div>
+            <div class="projdiv">
+                <a class="registeranchor" ><h1 class="projecttopic">REGISTER FORM</h1></a>
+                <img style="height: 90%;" class="projectimage" src="./projectpics/registerform.png">
+                <p>Register Form using useContext hooks of ReactJS</p>
+            </div>
+            <div class="projdiv">
+                <a class="todoanchor" ><h1 class="projecttopic">TODO LIST</h1></a>
+                <img class="projectimage" src="./projectpics/todolist.png">
+                <p>Todo List using useState React Hook </p>
+            </div>
+         </div>
+       </div>
+    </section>
+    <section class="contact" id="contact">
+      
+     <div class="cont">
+        <div class="contdiv">
+            <div class="number" style="font-weight: 600; color: dodgerblue;">MOBILE</div>
+            <div class="numberval" style="font-weight:600;">9994017082</div>
+        </div>
+        <div class="contdiv">
+            <div class="mail" style="font-weight: 600; color: dodgerblue;">EMAIL</div>
+            <div class="mailval" style="font-weight:600;">balajirdb45@gmail.com</div>
+        </div>
+        <div class="contdiv">
+            <div class="number" style="font-weight: 600; color: dodgerblue;">ADDRESS</div>
+            <div class="numberval" style="font-weight:600; line-height: 1.5">23A,Mookamoopar Street,<br>Boothipuram,<br>Theni District-625531</div>
+        </div>
+        <div class="contdiv">
+            <div class="github" style="font-weight: 600; color: dodgerblue;">GITHUB</div>
+            <div class="githubval"><a style="font-weight:600; text-decoration: none; " href="https://github.com/BalajiRD27" target="_blank"
+                onmouseover="this.style.color='cornflowerblue'"
+                  onmouseout="this.style.color='dodgerblue'">https://github.com/BalajiRD27</a></div>
+        </div>
+     </div>
+     <div class="footer">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAo1JREFUSEu11UuolVUUB/DfVVRCEW0Q5EAFAwVNMmyQmogGPSZaSiMVLItCKoWsoBS1DK0gfAwMyedIUFJEULFEAweigYqPUAtnkor4xMzUvS7ryDnHc+65De4a7W/vtdZ/Pf5rfW26WNq62L9WAD3wJl7DcxicAf2F37EbP+Nes0A7AngZazCkRZZn8D4ONNJrBvAFvk6DywVkM3bgZN6NwBTMwJN4gHlYUQ/SCGABluA/fI+luNEki775Pof2cn+I1dW69QCvZF3vYByOdpIE47E/dV/E4YpdNUA3nMJQvI31Vc6n4QNMzLvj+KWcF+F63s3HtziEsY0Agi3bcBpR4/up9B0+aZLJrMKsDfnWC8GupxMggGpouhVT8XFp3Mo0egtb8vwNViUlo5QDEODVsgyfpX34qQG4gIF4prDjfFoF10fh0wbOGiX1Uinjwezd6HqA23gCPfFvWv+T30/hUicaHpS9UqpwNelbk0FQsQ+CehVa3iyR9866XuwEQNheS/s41wDERAaDRpZenEhnvyVdo67BkFbyfJYn2Di8HmAjZuLzUqrl6Wly2UHb8xwDF83vjgnZr4peBXhhCXoxfsLseoDXsQtnMayKphF5cLyRvFOA1uVDLMZzCTwJv9YDxHcM0LN4D2urPMagfVSGK1hS0dub+ypqHjIXP+BICfSFim39qgjkfbiLMf9zVcRkxzaIINqHrFEGcfdlqfNXOVAxSFH7W01K1L/cx7qIJRfBRpYxjI+k2bquNCsU/8Ym7MQxxEqIVfJGqfl09Mt1HZNb47xZBhX0Vwv/f8ymNUmg/foPvIug9GPS6pcZ0cZ+CobFfAzKaP/MZu5JGse/o6G0Augo8k69dTnAQ6V9ehnw5cSvAAAAAElFTkSuQmCC"/> <span id="currentYear"></span>
+     </div>
+    </section>
+</container>
+    <script src="app.js">
+      
+    </script>
+</body>
+
+</html>
